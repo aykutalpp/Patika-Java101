@@ -1,3 +1,5 @@
+package Practice;
+
 public class isPolindrom {
     static boolean isPolindrom(int num){
         int temp = num, reversedNum=0, lastNum;
