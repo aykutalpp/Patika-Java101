@@ -5,25 +5,25 @@ public class Combination {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter the n = ");
-        int number = input.nextInt();
+        int nNumber = input.nextInt();
 
         System.out.print("Enter the r = ");
-        int rnumber = input.nextInt();
+        int rNumber = input.nextInt();
 
-        int  n = number,r = rnumber, z = n-r,total = 1, total2 = 1,total3 = 1;
+        int  n = nNumber,r = rNumber, z = n-r,nFac = 1, rFac = 1,nMinusRFac = 1;
 
-        while (!(number == 1)){
-            total *= number;
-            number--;
+        while (!(nNumber == 1)){
+            nFac *= nNumber;
+            nNumber--;
         }
-        while (!(rnumber == 1)){
-            total2 *= rnumber;
-            rnumber--;
+        while (!(rNumber == 1)){
+            rFac *= rNumber;
+            rNumber--;
         }
         while (!(z == 1)){
-            total3 *= z;
+            nMinusRFac *= z;
             z--;
         }
-        System.out.println("C("+n+","+r+") = "+total / (total2 * total3));
+        System.out.println("C("+n+","+r+") = "+nFac / (rFac * nMinusRFac));
     }
 }
