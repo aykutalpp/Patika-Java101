@@ -2,7 +2,6 @@ package week2.Practice;
 import java.util.Scanner;
 
 public class recursivePrime {
-
     static boolean isPrime(int n, int i)
     {
         // Base cases
@@ -22,8 +21,6 @@ public class recursivePrime {
         int n = inp.nextInt();
 
         System.out.println(isPrime(n,2));
-
-
 
     }
 }
